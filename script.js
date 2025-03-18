@@ -11,12 +11,12 @@ function convertToRoman(num) {
 
   //your code here
 	let roman="";
-		for(let i=0;i<obj.length;i++)
+		for(let i=0;i< object.keys(obj).length;i++)
 			{
-				while(num>=obj[i])
+				while(num>=obj[i][1])
 				{
-				 roman += i;
-					num -=obj[i];
+				 roman += obj[i][0];
+					num -=obj[i][1];
 				}
 			}
 	return roman;
