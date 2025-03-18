@@ -15,7 +15,7 @@ function convertToRoman(num) {
 	
 		for(let i=0;i<obj;i++)
 			{
-				if(num>=obj.value)
+				if(num>=obj[i].value)
 				{
 				 return obj[i].numeral + convertToRoman(num - obj[i].value);
 				}
