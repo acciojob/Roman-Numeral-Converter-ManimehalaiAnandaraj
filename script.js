@@ -10,6 +10,18 @@ function convertToRoman(num) {
     };
 
   //your code here
+	if(num === 0)
+		return;
+	else
+	{
+		for(let i=0;i<obj;i++)
+			{
+				if(num>=obj.value)
+				{
+				 return obj[i].numeral + toRoman(num - obj[i].value);
+				}
+			}
+	}
 
 }
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
