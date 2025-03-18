@@ -15,7 +15,7 @@ function convertToRoman(num) {
 			{
 				while(num>=obj[key][1])
 				{
-				 roman += key[0];
+				 roman += obj[key][0];
 					num -=obj[key][1];
 				}
 			}
