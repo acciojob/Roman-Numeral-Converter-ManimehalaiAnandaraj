@@ -13,10 +13,10 @@ function convertToRoman(num) {
 	let roman="";
 		for(let key in obj)
 			{
-				while(num>=obj[key])
+				while(num>=obj[key][1])
 				{
-				 roman += key;
-					num -=obj[key];
+				 roman += key[0];
+					num -=obj[key][1];
 				}
 			}
 	return roman;
